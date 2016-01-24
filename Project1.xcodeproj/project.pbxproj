@@ -14,6 +14,9 @@
 		92DD6F641C4D040500F082F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DD6F621C4D040500F082F5 /* LaunchScreen.storyboard */; };
 		92DD6F6F1C4D040500F082F5 /* Project1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD6F6E1C4D040500F082F5 /* Project1Tests.swift */; };
 		92DD6F7A1C4D040500F082F5 /* Project1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD6F791C4D040500F082F5 /* Project1UITests.swift */; };
+		92DD85621C52D75900F082F5 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DD85611C52D75900F082F5 /* FBSDKLoginKit.framework */; };
+		92DD85641C52D77A00F082F5 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DD85631C52D77A00F082F5 /* FBSDKCoreKit.framework */; };
+		92DD85661C52D9EA00F082F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DD85651C52D9EA00F082F5 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9209CE0E1C55806D00D73870 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		92DD6F561C4D040500F082F5 /* Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DD6F591C4D040500F082F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92DD6F5B1C4D040500F082F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,9 @@
 		92DD6F751C4D040500F082F5 /* Project1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DD6F791C4D040500F082F5 /* Project1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project1UITests.swift; sourceTree = "<group>"; };
 		92DD6F7B1C4D040500F082F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92DD85611C52D75900F082F5 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../Documents/FacebookSDKs-iOS-20150813/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		92DD85631C52D77A00F082F5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../Documents/FacebookSDKs-iOS-20150813/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		92DD85651C52D9EA00F082F5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92DD85621C52D75900F082F5 /* FBSDKLoginKit.framework in Frameworks */,
+				92DD85641C52D77A00F082F5 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +86,7 @@
 		92DD6F4D1C4D040500F082F5 = {
 			isa = PBXGroup;
 			children = (
+				92DD83201C52D6B300F082F5 /* Frameworks */,
 				92DD6F581C4D040500F082F5 /* Project1 */,
 				92DD6F6D1C4D040500F082F5 /* Project1Tests */,
 				92DD6F781C4D040500F082F5 /* Project1UITests */,
@@ -98,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				92DD6F591C4D040500F082F5 /* AppDelegate.swift */,
+				92DD85651C52D9EA00F082F5 /* AppDelegate.m */,
+				9209CE0E1C55806D00D73870 /* Bridging-Header.h */,
 				92DD6F5B1C4D040500F082F5 /* ViewController.swift */,
 				92DD6F5D1C4D040500F082F5 /* Main.storyboard */,
 				92DD6F601C4D040500F082F5 /* Assets */,
@@ -123,6 +135,15 @@
 				92DD6F7B1C4D040500F082F5 /* Info.plist */,
 			);
 			path = Project1UITests;
+			sourceTree = "<group>";
+		};
+		92DD83201C52D6B300F082F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92DD85631C52D77A00F082F5 /* FBSDKCoreKit.framework */,
+				92DD85611C52D75900F082F5 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +279,7 @@
 			files = (
 				92DD6F5C1C4D040500F082F5 /* ViewController.swift in Sources */,
 				92DD6F5A1C4D040500F082F5 /* AppDelegate.swift in Sources */,
+				92DD85661C52D9EA00F082F5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,8 +419,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/facebook-ios-sdk/vendor/appledoc/Libraries",
+					"$(PROJECT_DIR)/facebook-ios-sdk/vendor/xctool/Vendor",
+					/Users/sunjay/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = Project1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/facebook-ios-sdk/vendor/appledoc/Libraries",
+					"$(PROJECT_DIR)/facebook-ios-sdk/vendor/OCMock/Examples/iOS5Example/usr/lib",
+					"$(PROJECT_DIR)/facebook-ios-sdk/vendor/OCMock/Examples/iOS7Example/usr/lib",
+					"$(PROJECT_DIR)/facebook-ios-sdk/vendor/OCMock/Examples/iPhoneExample/Libraries",
+					"$(PROJECT_DIR)/facebook-ios-sdk/vendor/OCMock/Examples/SwiftExamples/usr/lib",
+					"$(PROJECT_DIR)/facebook-ios-sdk/vendor/xctool/xctool/xctool-tests/TestData/KiwiTests/Build/Products/Debug-iphonesimulator",
+					"$(PROJECT_DIR)/facebook-ios-sdk/vendor/xctool/xctool/xctool-tests/TestData/tests-osx-test-bundle",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "St-Marys.Project1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -408,8 +446,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/facebook-ios-sdk/vendor/appledoc/Libraries",
+					"$(PROJECT_DIR)/facebook-ios-sdk/vendor/xctool/Vendor",
+					/Users/sunjay/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = Project1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/facebook-ios-sdk/vendor/appledoc/Libraries",
+					"$(PROJECT_DIR)/facebook-ios-sdk/vendor/OCMock/Examples/iOS5Example/usr/lib",
+					"$(PROJECT_DIR)/facebook-ios-sdk/vendor/OCMock/Examples/iOS7Example/usr/lib",
+					"$(PROJECT_DIR)/facebook-ios-sdk/vendor/OCMock/Examples/iPhoneExample/Libraries",
+					"$(PROJECT_DIR)/facebook-ios-sdk/vendor/OCMock/Examples/SwiftExamples/usr/lib",
+					"$(PROJECT_DIR)/facebook-ios-sdk/vendor/xctool/xctool/xctool-tests/TestData/KiwiTests/Build/Products/Debug-iphonesimulator",
+					"$(PROJECT_DIR)/facebook-ios-sdk/vendor/xctool/xctool/xctool-tests/TestData/tests-osx-test-bundle",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "St-Marys.Project1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -482,6 +536,7 @@
 				92DD6F801C4D040500F082F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92DD6F811C4D040500F082F5 /* Build configuration list for PBXNativeTarget "Project1Tests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +545,7 @@
 				92DD6F831C4D040500F082F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92DD6F841C4D040500F082F5 /* Build configuration list for PBXNativeTarget "Project1UITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +554,7 @@
 				92DD6F861C4D040500F082F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
