@@ -439,7 +439,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "St-Marys.Project1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Project1/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/users/Sanjay/Dropbox/Swift/Project1/Project1/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -467,7 +467,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "St-Marys.Project1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Project1/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/users/Sanjay/Dropbox/Swift/Project1/Project1/Bridging-Header.h";
 			};
 			name = Release;
 		};
