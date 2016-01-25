@@ -2,21 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>CFBundleURLTypes</key>
-    <array>
-        <dict>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <string>fb1683517031927477</string>
-            </array>
-        </dict>
-    </array>
-    <key>1683517031927477</key>
-    <string>1683517031927477</string>
-    <key>Project1</key>
-    <string>Project1</string>
-	<key>1683517031927477</key>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb1683517031927477</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleDisplayName</key>
+	<string></string>
+	<key>FacebookDisplayName</key>
+	<string>Project1</string>
+	<key>FacebookAppID</key>
 	<string>1683517031927477</string>
+	<key>Project1</key>
+	<string>Project1</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
@@ -53,6 +55,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    
 </dict>
 </plist>
