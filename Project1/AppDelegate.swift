@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,15 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
     
-    func application(application: UIApplication,
-        openURL url: NSURL,
-        sourceApplication: String?,
+    func application(application: UIApplication,openURL url: NSURL,sourceApplication: String?,
         annotation: AnyObject?) -> Bool {
-            return FBSDKApplicationDelegate.sharedInstance().application(
-                application,
-                openURL: url,
-                sourceApplication: sourceApplication,
-                annotation: annotation)
+            return FBSDKApplicationDelegate.sharedInstance().application(application,
+                openURL: url,sourceApplication: sourceApplication,annotation: annotation)
     }
     
     func applicationWillResignActive(application: UIApplication) {

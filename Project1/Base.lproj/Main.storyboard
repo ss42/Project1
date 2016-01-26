@@ -76,13 +76,27 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="By signing up, I agree to SPARE's Terms of Service and Privacy Policy." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="F4m-TR-kRB" userLabel="agreeTerms">
+                                <rect key="frame" x="59" y="290" width="297" height="63"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="By signing up, I agree to SPARE's Terms of Service and Privacy Policy." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nEt-Rh-GwV" userLabel="agreeTerms">
+                                <rect key="frame" x="59" y="290" width="297" height="63"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="conditionMainpage" destination="nEt-Rh-GwV" id="aWV-WO-Bgf"/>
                         <outlet property="passwordTextField" destination="GWq-md-P1Y" id="lti-wc-lOr"/>
                         <outlet property="repeatPasswordTextField" destination="EGA-SJ-0aE" id="jKP-EL-BdF"/>
+                        <outlet property="spareTitle" destination="Xcl-El-flj" id="kNS-9a-cBc"/>
                         <outlet property="userNameTextField" destination="C6a-Nf-pRe" id="mZY-pN-ejZ"/>
                     </connections>
                 </viewController>

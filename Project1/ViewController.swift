@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 class ViewController: UIViewController, FBSDKLoginButtonDelegate  {
     
+    @IBOutlet weak var spareTitle: UITextView!
     @IBOutlet weak var userNameTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
     
+    @IBOutlet weak var conditionMainpage: UITextView!
     @IBOutlet weak var repeatPasswordTextField: UITextField!
 
     override func viewDidLoad() {
@@ -22,6 +26,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate  {
         
         if (FBSDKAccessToken.currentAccessToken() != nil)
         {
+            println("Logged in..")
             // User is already logged in, do work such as go to next view controller.
         }
         else
@@ -31,6 +36,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate  {
             loginView.center = self.view.center
             loginView.readPermissions = ["public_profile", "email", "user_friends"]
             loginView.delegate = self
+            self.view.addSubview(loginView)
         }
         
     }
@@ -53,18 +59,11 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate  {
         
         if ((error) != nil)
         {
-            // Process error
+            println("LoginComplete")
         }
-        else if result.isCancelled {
-            // Handle cancellations
-        }
+        
         else {
-            // If you ask for multiple permissions at once, you
-            // should check if specific permissions missing
-            if result.grantedPermissions.contains("email")
-            {
-                // Do work
-            }
+            println("error message")
         }
     }
     
