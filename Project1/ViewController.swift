@@ -20,24 +20,28 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate  {
     @IBOutlet weak var conditionMainpage: UITextView!
     @IBOutlet weak var repeatPasswordTextField: UITextField!
 
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var Register: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        if (FBSDKAccessToken.currentAccessToken() != nil)
+        if (FBSDKAccessToken.currentAccessToken() == nil)
         {
-            println("Logged in..")
+            print("Not Logged in..")
             // User is already logged in, do work such as go to next view controller.
         }
         else
         {
-            let loginView : FBSDKLoginButton = FBSDKLoginButton()
-            self.view.addSubview(loginView)
-            loginView.center = self.view.center
-            loginView.readPermissions = ["public_profile", "email", "user_friends"]
-            loginView.delegate = self
-            self.view.addSubview(loginView)
+            print("Logged in..")
         }
+        let loginButton : FBSDKLoginButton = FBSDKLoginButton()
+        self.view.addSubview(loginButton)
+        loginButton.center = self.view.center
+        loginButton.readPermissions = ["public_profile", "email", "user_friends"]
+        loginButton.delegate = self
+        self.view.addSubview(loginButton)
+        
         
     }
 
@@ -46,29 +50,24 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate  {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func registerButtonPressed(sender: UIButton) {
-        
-        
-    }
-    
-    @IBAction func facebookSignInButtonPressed(sender: UIButton) {
-        
-    }
+   
+  
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
-        println("User Logged In")
+        print("User Logged In")
         
-        if ((error) != nil)
+        if ((error) == nil)
         {
-            println("LoginComplete")
+            print("LoginComplete")
+            self.performSegueWithIdentifier("showNew", sender: self)
         }
         
         else {
-            println("error message")
+            print("error message")
         }
     }
     
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
-        println("User Logged Out")
+        print("User Logged Out")
     }
 
 }

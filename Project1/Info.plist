@@ -9,12 +9,8 @@
 			<array>
 				<string>fb1683517031927477</string>
 			</array>
-			<key>CFBundleURLName</key>
-			<string></string>
 		</dict>
 	</array>
-	<key>CFBundleDisplayName</key>
-	<string></string>
 	<key>FacebookDisplayName</key>
 	<string>Project1</string>
 	<key>FacebookAppID</key>

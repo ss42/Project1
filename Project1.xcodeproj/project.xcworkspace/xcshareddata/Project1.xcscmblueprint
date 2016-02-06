@@ -1,0 +1,72 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6CC932A635672247303A5E247895BE58A77C16CF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2CCA50D9C59B0DF3EAC1916AC312B31B6EE02015" : 0,
+    "6CC932A635672247303A5E247895BE58A77C16CF" : 0,
+    "F851E1D8A348ED6D1513B00F69F61CD978F43008" : 0,
+    "A11A2549D5CB40607BCC5ED8DF4A3BF3E6CE30E2" : 0,
+    "A20D666FF4B08EFE53F147818C2D4D17E2242912" : 0,
+    "542E5EAD47EA299C9005C3138923F693160B998F" : 0,
+    "61C4B9E3B61282127C102C87B46B8CDE985974AE" : 0,
+    "E4BCE3AE6B24E41B9BCE312FF3B0B6CD0B8B8025" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CEB49EEE-21DA-4539-B974-F1DC4E07DE9B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2CCA50D9C59B0DF3EAC1916AC312B31B6EE02015" : "Project1\/facebook-ios-sdk\/vendor\/xctool\/",
+    "6CC932A635672247303A5E247895BE58A77C16CF" : "Project1\/",
+    "F851E1D8A348ED6D1513B00F69F61CD978F43008" : "Project1\/facebook-ios-sdk\/vendor\/appledoc\/",
+    "A11A2549D5CB40607BCC5ED8DF4A3BF3E6CE30E2" : "Project1\/facebook-ios-sdk\/vendor\/OHHTTPStubs\/",
+    "A20D666FF4B08EFE53F147818C2D4D17E2242912" : "Project1\/facebook-ios-sdk\/",
+    "542E5EAD47EA299C9005C3138923F693160B998F" : "Project1\/facebook-ios-sdk\/vendor\/ios-snapshot-test-case\/",
+    "61C4B9E3B61282127C102C87B46B8CDE985974AE" : "Project1\/facebook-ios-sdk\/Bolts-IOS\/",
+    "E4BCE3AE6B24E41B9BCE312FF3B0B6CD0B8B8025" : "Project1\/facebook-ios-sdk\/vendor\/OCMock\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Project1",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Project1.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git:\/\/github.com\/facebook\/xctool.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2CCA50D9C59B0DF3EAC1916AC312B31B6EE02015"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git:\/\/github.com\/facebook\/ios-snapshot-test-case.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "542E5EAD47EA299C9005C3138923F693160B998F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git:\/\/github.com\/BoltsFramework\/Bolts-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "61C4B9E3B61282127C102C87B46B8CDE985974AE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ss42\/Project1.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6CC932A635672247303A5E247895BE58A77C16CF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git:\/\/github.com\/AliSoftware\/OHHTTPStubs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A11A2549D5CB40607BCC5ED8DF4A3BF3E6CE30E2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ss42\/facebook-ios-sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A20D666FF4B08EFE53F147818C2D4D17E2242912"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git:\/\/github.com\/erikdoe\/ocmock",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E4BCE3AE6B24E41B9BCE312FF3B0B6CD0B8B8025"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git:\/\/github.com\/tomaz\/appledoc.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F851E1D8A348ED6D1513B00F69F61CD978F43008"
+    }
+  ]
+}
