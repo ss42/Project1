@@ -37,7 +37,8 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate  {
         }
         let loginButton : FBSDKLoginButton = FBSDKLoginButton()
         self.view.addSubview(loginButton)
-        loginButton.center = self.view.center
+        loginButton.frame.origin = CGPoint(x:75, y: 480)
+    
         loginButton.readPermissions = ["public_profile", "email", "user_friends"]
         loginButton.delegate = self
         self.view.addSubview(loginButton)
@@ -58,7 +59,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate  {
         if ((error) == nil)
         {
             print("LoginComplete")
-            self.performSegueWithIdentifier("showNew", sender: self)
+            
         }
         
         else {
