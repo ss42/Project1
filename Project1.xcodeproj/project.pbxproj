@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		106C64521C72265A00CD7124 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C64511C72265A00CD7124 /* registerViewController.swift */; };
 		9209CE161C56F3DA00D73870 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9209CE151C56F3DA00D73870 /* FBSDKCoreKit.framework */; };
 		9209CE181C56F3E600D73870 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9209CE171C56F3E600D73870 /* FBSDKLoginKit.framework */; };
 		92DD6F5A1C4D040500F082F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD6F591C4D040500F082F5 /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		106C64511C72265A00CD7124 /* registerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
 		9209CE151C56F3DA00D73870 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		9209CE171C56F3E600D73870 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		92DD6F561C4D040500F082F5 /* Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 			children = (
 				92DD6F591C4D040500F082F5 /* AppDelegate.swift */,
 				92DD6F5B1C4D040500F082F5 /* ViewController.swift */,
+				106C64511C72265A00CD7124 /* registerViewController.swift */,
 				92DD6F5D1C4D040500F082F5 /* Main.storyboard */,
 				92DD6F601C4D040500F082F5 /* Assets */,
 				92DD6F621C4D040500F082F5 /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				106C64521C72265A00CD7124 /* registerViewController.swift in Sources */,
 				92DD6F5C1C4D040500F082F5 /* ViewController.swift in Sources */,
 				92DD6F5A1C4D040500F082F5 /* AppDelegate.swift in Sources */,
 			);
