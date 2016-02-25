@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		106C64521C72265A00CD7124 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C64511C72265A00CD7124 /* registerViewController.swift */; };
+		1065AE271C7EC22900E8C6E6 /* mainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1065AE261C7EC22800E8C6E6 /* mainPageViewController.swift */; };
+		1065AE291C7EC32700E8C6E6 /* signInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1065AE281C7EC32700E8C6E6 /* signInViewController.swift */; };
+		1065AE2B1C7EC33C00E8C6E6 /* forgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1065AE2A1C7EC33C00E8C6E6 /* forgotPasswordViewController.swift */; };
+		106C64521C72265A00CD7124 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C64511C72265A00CD7124 /* profileViewController.swift */; };
 		106C64541C72F0EC00CD7124 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 106C64531C72F0EC00CD7124 /* Default-568h@2x.png */; };
 		9209CE161C56F3DA00D73870 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9209CE151C56F3DA00D73870 /* FBSDKCoreKit.framework */; };
 		9209CE181C56F3E600D73870 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9209CE171C56F3E600D73870 /* FBSDKLoginKit.framework */; };
 		92DD6F5A1C4D040500F082F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD6F591C4D040500F082F5 /* AppDelegate.swift */; };
-		92DD6F5C1C4D040500F082F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD6F5B1C4D040500F082F5 /* ViewController.swift */; };
+		92DD6F5C1C4D040500F082F5 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD6F5B1C4D040500F082F5 /* registerViewController.swift */; };
 		92DD6F5F1C4D040500F082F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DD6F5D1C4D040500F082F5 /* Main.storyboard */; };
 		92DD6F611C4D040500F082F5 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 92DD6F601C4D040500F082F5 /* Assets */; };
 		92DD6F641C4D040500F082F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DD6F621C4D040500F082F5 /* LaunchScreen.storyboard */; };
@@ -38,13 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		106C64511C72265A00CD7124 /* registerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
+		1065AE261C7EC22800E8C6E6 /* mainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainPageViewController.swift; sourceTree = "<group>"; };
+		1065AE281C7EC32700E8C6E6 /* signInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signInViewController.swift; sourceTree = "<group>"; };
+		1065AE2A1C7EC33C00E8C6E6 /* forgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = forgotPasswordViewController.swift; sourceTree = "<group>"; };
+		106C64511C72265A00CD7124 /* profileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		106C64531C72F0EC00CD7124 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9209CE151C56F3DA00D73870 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		9209CE171C56F3E600D73870 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		92DD6F561C4D040500F082F5 /* Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DD6F591C4D040500F082F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92DD6F5B1C4D040500F082F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92DD6F5B1C4D040500F082F5 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
 		92DD6F5E1C4D040500F082F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92DD6F601C4D040500F082F5 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		92DD6F631C4D040500F082F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,8 +117,11 @@
 			isa = PBXGroup;
 			children = (
 				92DD6F591C4D040500F082F5 /* AppDelegate.swift */,
-				92DD6F5B1C4D040500F082F5 /* ViewController.swift */,
-				106C64511C72265A00CD7124 /* registerViewController.swift */,
+				92DD6F5B1C4D040500F082F5 /* registerViewController.swift */,
+				106C64511C72265A00CD7124 /* profileViewController.swift */,
+				1065AE261C7EC22800E8C6E6 /* mainPageViewController.swift */,
+				1065AE281C7EC32700E8C6E6 /* signInViewController.swift */,
+				1065AE2A1C7EC33C00E8C6E6 /* forgotPasswordViewController.swift */,
 				92DD6F5D1C4D040500F082F5 /* Main.storyboard */,
 				92DD6F601C4D040500F082F5 /* Assets */,
 				92DD6F621C4D040500F082F5 /* LaunchScreen.storyboard */,
@@ -271,9 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				106C64521C72265A00CD7124 /* registerViewController.swift in Sources */,
-				92DD6F5C1C4D040500F082F5 /* ViewController.swift in Sources */,
+				1065AE271C7EC22900E8C6E6 /* mainPageViewController.swift in Sources */,
+				106C64521C72265A00CD7124 /* profileViewController.swift in Sources */,
+				1065AE2B1C7EC33C00E8C6E6 /* forgotPasswordViewController.swift in Sources */,
+				92DD6F5C1C4D040500F082F5 /* registerViewController.swift in Sources */,
 				92DD6F5A1C4D040500F082F5 /* AppDelegate.swift in Sources */,
+				1065AE291C7EC32700E8C6E6 /* signInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
