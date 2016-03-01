@@ -393,6 +393,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="yIa-cI-RFe" kind="show" id="9vP-hw-jvP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n42-NO-K1K">
                                 <rect key="frame" x="238" y="407" width="125" height="30"/>
@@ -419,6 +422,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZ3-vv-vtj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1973" y="130"/>
+        </scene>
+        <!--Google Maps View Controller-->
+        <scene sceneID="2zQ-9E-Tn7">
+            <objects>
+                <viewController id="yIa-cI-RFe" customClass="GoogleMapsViewController" customModule="Project1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s1r-mX-wmK"/>
+                        <viewControllerLayoutGuide type="bottom" id="qk4-7d-aXW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gqf-e2-U1u">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZfQ-qw-2P1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2078" y="838"/>
         </scene>
         <!--Forgot Password View Controller-->
         <scene sceneID="v7B-4k-Cxn">
