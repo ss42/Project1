@@ -7,70 +7,73 @@
 //
 
 import UIKit
-//import FBSDKCoreKit
-//import FBSDKLoginKit
 
 class registerViewController: UIViewController {
     
-    //@IBOutlet weak var spareTitle: UITextView!
-    //@IBOutlet weak var userNameTextField: UITextField!
     
-   // @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var userEmailTextView: UITextField!
+    @IBOutlet weak var userPasswordTextView: UITextField!
     
-   // @IBOutlet weak var conditionMainpage: UITextView!
-   // @IBOutlet weak var repeatPasswordTextField: UITextField!
-
-//    @IBOutlet weak var loginButton: UIButton!
-  //  @IBOutlet weak var Register: UIButton!
+    @IBOutlet weak var userRepeatPasswordTextView: UITextField!
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        //if (FBSDKAccessToken.currentAccessToken() == nil)
-        //{
-         //   print("Not Logged in..")
-            // User is already logged in, do work such as go to next view controller.
-        //}
-        //else
-        //{
-         //   print("Logged in..")
-        //}
-        //let loginButton : FBSDKLoginButton = FBSDKLoginButton()
-        //self.view.addSubview(loginButton)
-        //loginButton.frame.origin = CGPoint(x:85, y: 480)
-    
-        //loginButton.readPermissions = ["public_profile", "email", "user_friends"]
-        //loginButton.delegate = self
-        //self.view.addSubview(loginButton)
-        
-        
+        // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-   
-  
-    //func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
-      //  print("User Logged In")
-        
-        //if ((error) == nil)
-       // {
-        //    print("LoginComplete")
-            
-      //  }
-        
-       // else {
-         //   print("error message")
-       // }
-   // }
+    func displayMyAlertMessage(userMessage: String) {
+        let myAlert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: UIAlertControllerStyle.Alert)
+        let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.Default, handler: nil)
+        myAlert.addAction(okAction)
+        self.presentViewController(myAlert, animated: true, completion: nil);
+    }
     
-   // func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
-    //    print("User Logged Out")
-   // }
-
+    
+    @IBAction func registerButtonTapped(sender: AnyObject) {
+        let userEmail =  userEmailTextView.text
+        let userPassword = userPasswordTextView.text
+        let userRepeatPassword = userRepeatPasswordTextView.text
+        
+        //check for empty fields
+        if (userEmail!.isEmpty || userPassword!.isEmpty || userRepeatPassword!.isEmpty)
+        {
+            //Display alert message
+            displayMyAlertMessage("All fields are required")
+            return;
+        }
+        if (userPassword != userRepeatPassword){
+            //Display an alert
+            displayMyAlertMessage("Passwords do not match")
+        }
+        //store data
+        //Need to Store data in ServerSide
+        NSUserDefaults.standardUserDefaults().setObject(userEmail, forKey: "userEmail")
+        NSUserDefaults.standardUserDefaults().setObject(userPassword, forKey: "userPassword")
+        NSUserDefaults.standardUserDefaults().synchronize();
+        
+        //display alert message with confirmation
+        
+        
+        let myAlert = UIAlertController(title:"Alert", message:"Registration is successful. Thank you!", preferredStyle: UIAlertControllerStyle.Alert);
+        
+        let okAction = UIAlertAction(title:"Ok", style:UIAlertActionStyle.Default){ action in
+            self.dismissViewControllerAnimated(true, completion:nil);
+        }
+        
+        myAlert.addAction(okAction);
+        self.presentViewController(myAlert, animated:true, completion:nil);
+        
+    }
+    
 }
-
 

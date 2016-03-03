@@ -26,4 +26,15 @@ class GoogleMapsViewController: UIViewController {
         marker.snippet = "Australia"
         marker.map = mapView
     }
+    override func viewDidAppear(animated: Bool)
+    {
+        let isUserLoggedIn = NSUserDefaults.standardUserDefaults().boolForKey("isUserLoggedIn");
+        
+        if(!isUserLoggedIn)
+        {
+            self.performSegueWithIdentifier("loginView", sender: self);
+        }
+        
+        
+    }
 }
