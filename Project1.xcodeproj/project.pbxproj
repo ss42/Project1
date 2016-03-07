@@ -12,7 +12,6 @@
 		1065AE2B1C7EC33C00E8C6E6 /* forgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1065AE2A1C7EC33C00E8C6E6 /* forgotPasswordViewController.swift */; };
 		106C64521C72265A00CD7124 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C64511C72265A00CD7124 /* profileViewController.swift */; };
 		106C64541C72F0EC00CD7124 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 106C64531C72F0EC00CD7124 /* Default-568h@2x.png */; };
-		2FAAF74D736EF494F8C77EFA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0ED94B57FC06657F76E61A /* libPods.a */; };
 		9209CE161C56F3DA00D73870 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9209CE151C56F3DA00D73870 /* FBSDKCoreKit.framework */; };
 		9209CE181C56F3E600D73870 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9209CE171C56F3E600D73870 /* FBSDKLoginKit.framework */; };
 		927EF9581C86077F00DA5810 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 927EF9571C86077F00DA5810 /* Podfile */; };
@@ -24,6 +23,8 @@
 		92DD6F641C4D040500F082F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DD6F621C4D040500F082F5 /* LaunchScreen.storyboard */; };
 		92DD6F6F1C4D040500F082F5 /* Project1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD6F6E1C4D040500F082F5 /* Project1Tests.swift */; };
 		92DD6F7A1C4D040500F082F5 /* Project1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD6F791C4D040500F082F5 /* Project1UITests.swift */; };
+		B9D5D143A5F731C6C114DBA9 /* Pods_Project1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B86E25AB01533C2323662C /* Pods_Project1.framework */; };
+		D01E190D84A1E431F938470A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77C0522A08053CE0D7AEA3D /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,7 @@
 		1065AE2A1C7EC33C00E8C6E6 /* forgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = forgotPasswordViewController.swift; sourceTree = "<group>"; };
 		106C64511C72265A00CD7124 /* profileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		106C64531C72F0EC00CD7124 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		5E0ED94B57FC06657F76E61A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		26B86E25AB01533C2323662C /* Pods_Project1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E7F185D02B5EF4E5CC02566 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Project1/Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9209CE151C56F3DA00D73870 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		9209CE171C56F3E600D73870 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 		92DD6F751C4D040500F082F5 /* Project1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DD6F791C4D040500F082F5 /* Project1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project1UITests.swift; sourceTree = "<group>"; };
 		92DD6F7B1C4D040500F082F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D77C0522A08053CE0D7AEA3D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FDA156AA1B3B6A0CBF2332 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Project1/Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +80,8 @@
 			files = (
 				9209CE181C56F3E600D73870 /* FBSDKLoginKit.framework in Frameworks */,
 				9209CE161C56F3DA00D73870 /* FBSDKCoreKit.framework in Frameworks */,
-				2FAAF74D736EF494F8C77EFA /* libPods.a in Frameworks */,
+				D01E190D84A1E431F938470A /* Pods.framework in Frameworks */,
+				B9D5D143A5F731C6C114DBA9 /* Pods_Project1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +167,8 @@
 		ABB8E7C52E019A480737F32E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5E0ED94B57FC06657F76E61A /* libPods.a */,
+				D77C0522A08053CE0D7AEA3D /* Pods.framework */,
+				26B86E25AB01533C2323662C /* Pods_Project1.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -322,7 +326,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Project1/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Project1/Pods/Target Support Files/Pods-Project1/Pods-Project1-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5900EC073657F08D01EBAAB6 /* Check Pods Manifest.lock */ = {
@@ -352,7 +356,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Project1/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Project1/Pods/Target Support Files/Pods-Project1/Pods-Project1-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -509,6 +513,7 @@
 			baseConfigurationReference = E7FDA156AA1B3B6A0CBF2332 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/facebook-ios-sdk/vendor/appledoc/Libraries",
@@ -535,6 +540,7 @@
 			baseConfigurationReference = 6E7F185D02B5EF4E5CC02566 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/facebook-ios-sdk/vendor/appledoc/Libraries",

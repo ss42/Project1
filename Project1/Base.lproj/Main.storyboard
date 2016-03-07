@@ -347,7 +347,7 @@
                         <viewControllerLayoutGuide type="bottom" id="UTO-Eu-cQ4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ewf-tx-6Bq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SPARE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWS-Ju-BNh">
@@ -398,6 +398,13 @@
                                 </state>
                                 <connections>
                                     <segue destination="YNA-Rw-DUY" kind="presentation" identifier="forgotPasswordView" id="LKB-xV-cil"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLf-9R-K2g">
+                                <rect key="frame" x="166" y="496" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="facebookSignInButtonTapped:" destination="rTq-sl-xEu" eventType="touchUpInside" id="cAU-bf-Xpp"/>
                                 </connections>
                             </button>
                         </subviews>

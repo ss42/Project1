@@ -9,16 +9,17 @@
 import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
+import Firebase
 
 class signInViewController: UIViewController {
     
     @IBOutlet weak var userEmailTextView: UITextField!
     @IBOutlet weak var userPasswordTextView: UITextField!
-
+    let ref = Firebase(url: "http://projectspare.firebaseapp.com")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        /*
         if (FBSDKAccessToken.currentAccessToken() == nil)
         {
             print("Not Logged in..")
@@ -35,7 +36,7 @@ class signInViewController: UIViewController {
         loginButton.readPermissions = ["public_profile", "email", "user_friends"]
         //loginButton.delegate = self
         self.view.addSubview(loginButton)
-        print("Hello world")
+        print("Hello world")*/
     }
 
     override func didReceiveMemoryWarning() {
@@ -64,6 +65,36 @@ class signInViewController: UIViewController {
         
         
     }
+    
+    @IBAction func facebookSignInButtonTapped(sender: AnyObject) {
+        
+        let facebookLogin = FBSDKLoginManager()
+        facebookLogin.logInWithReadPermissions(["email"], handler: {
+            (facebookResult, facebookError) -> Void in
+            if facebookError != nil {
+                print("Facebook login failed. Error \(facebookError)")
+            } else if facebookResult.isCancelled {
+                print("Facebook login was cancelled.")
+            } else {
+                let accessToken = FBSDKAccessToken.currentAccessToken().tokenString
+                self.ref.authWithOAuthProvider("facebook", token: accessToken,
+                    withCompletionBlock: { error, authData in
+                        if error != nil {
+                            print("Login failed. \(error)")
+                        } else {
+                            print("Logged in! \(authData)")
+                        }
+                })
+            }
+        })
+        
+        
+        
+        
+    }
+    
+
+    
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
         print("User Logged In")
         
